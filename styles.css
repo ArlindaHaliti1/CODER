@@ -218,3 +218,91 @@ footer {
   padding: 24px;
   margin-top: auto;
 }
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  nav.sidebar {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 16px 12px;
+    box-shadow: 0 2px 8px #000a;
+    gap: 0;
+  }
+
+  nav.sidebar img {
+    width: 60px;
+    margin: 0;
+  }
+
+  nav.sidebar a {
+    padding: 8px 6px;
+    font-size: 12px;
+    border-left: none;
+    border-bottom: 2px solid transparent;
+  }
+
+  nav.sidebar a i {
+    font-size: 20px;
+  }
+
+  nav.sidebar a:hover,
+  nav.sidebar a.active {
+    background-color: transparent;
+    color: var(--green);
+    border-bottom-color: var(--green);
+  }
+
+  main#main {
+    margin-left: 0;
+    padding: 24px 20px;
+  }
+
+  header.section-header h1 {
+    font-size: 2.2rem;
+  }
+
+  header.section-header p {
+    font-size: 1rem;
+  }
+
+  h2.section-title {
+    font-size: 1.5rem;
+  }
+
+  .skill-bar-wrapper {
+    height: 22px;
+  }
+
+  #interactive-js {
+    padding: 20px;
+  }
+
+  #nameInput,
+  #sayHelloBtn {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  #greeting {
+    font-size: 1.2rem;
+  }
+
+  #toast {
+    width: 90%;
+    right: 5%;
+    font-size: 14px;
+    padding: 12px 16px;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    padding: 16px;
+  }
+}
